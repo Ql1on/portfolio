@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+input {
+    border: 1px solid #cccccc; 
+    border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    -khtml-border-radius: 3px; 
+    background: #ffffff !important; 
+    outline: none; 
+    height: 24px;  
+    width: 120px; 
+    color: #cccccc; 
+    font-size: 11px; 
+    font-family: Tahoma; 
+}
+
+.fa-sharp {
+    font-size: 20px;
+    color: wheat;
+
+}
+
+.check {
+    position: absolute;
+    left: -9999px;
+    visibility: hidden;
+}
+
+.header {
+
+    display: flex;
+    padding-left: 30px;
+    position: relative;
+    height: 50px;
+    background-color: rgb(73, 72, 90);
+    align-items: center;
+
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    color: wheat;
+    margin-left: 70px;
+    font-size: 30px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to top, wheat, rgb(84, 132, 119));
+
+}
+
+.check:checked~.nav {
+    left: 0;
+}
+
+/*
+left: -100%;  
+transition: left 0.8s; это используется чтоб nav выезжала
+*/
+
+.nav {
+    background-color: rgb(73, 72, 90);
+    height: 100vh;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    width: 25%;
+    top: 0;
+    left: -100%;
+    transition: left 1s;
+    z-index: 9999;
+
+}
+
+.nav_link {
+    color: wheat;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+
+}
+
+.open_menu {
+    top: 20px;
+    left: 30px;
+}
+
+
+.katalog_list {
+    margin: 10px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, 350px);
+    gap: 10px;
+    height: 1000px;
+    width: 99%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.product {
+
+    border: 2px solid rgb(73, 72, 90);
+    box-sizing: border-box;
+    border-radius: 2%;
+
+}
+
+.header2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+
+}
+
+
+
+.text {
+    max-width: 1116px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+.card-img-top {
+
+    border-radius: 2%;
+}
+
+.btn {
+    border-color: rgb(73, 72, 90) !important;
+    background: rgb(73, 72, 90) !important;
+
+}
+
+.card-title {
+    padding: 30px;
+}
+
+.btn {
+    margin: 10px;
+}
+
+
+
+.buyzoneBG {
+    height: auto;
+    width: 99%;
+    margin-top: 50px;
+    border-top: 1px solid rgb(84, 132, 119);
+    border-bottom: 1px solid rgb(84, 132, 119);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: rgb(84, 132, 119);
+
+
+}
+
+.buyzone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 1300px;
+    margin: 10px;
+    border: 1px solid rgb(84, 132, 119);
+    border-radius: 20px;
+    background: white;
+}
+
+.img_buyzone {
+    height: 380px;
+    width: 50%;
+    background-image: url(https://a.cdn-hotels.com/gdcs/production81/d328/432ee777-1f22-47d5-a6b9-dc91aeb7f40a.jpg?impolicy=fcrop&w=800&h=533&q=medium);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.text_buyzone {
+    width: 450px;
+    text-align: start;
+}
+
+.text_buyzone__BP {
+    max-width: 450px;
+    text-align: start;
+}
+
+.button {
+    border: 1px solid rgb(84, 132, 119);
+    border-color: rgb(84, 132, 119);
+    background-color: rgb(84, 132, 119);
+    color: wheat;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: all 0.5s;
+
+}
+
+.buttonBP {
+    border: 1px solid wheat;
+    
+    background-color:wheat;
+    color: rgb(84, 132, 119);
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.5s;
+    padding: 4px;
+    margin: 10px;
+}
+.white {
+    color: white;
+}
+
+.buttonBP:hover {
+    color: wheat;
+    background-color: rgb(84, 132, 119);
+}
+
+.button:hover {
+    color: rgb(84, 132, 119);
+    background-color: wheat;
+}
+
+
+
+
+
+
+
+
+
+.en_txt {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.ru_txt {
+    font-family: 'Russo One', sans-serif;
+}
+
+.buyzoneBG__BP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buyzone__BP {
+    /* display: flex;
+    height: 650px;
+    width:99%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* gap: 32px; */
+    width: 1300px;
+    /* height: auto; */
+    height: 550px;
+    /* min-height: 650px; */
+    margin: 10px;
+    border: 1px solid rgb(84, 132, 119);
+    border-radius: 20px;
+    background: white;
+    box-sizing: border-box;
+}
+
+
+.add_form {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 10;
+    height: 370px;
+    max-width: 350px;
+    background-color: rgb(84, 132, 119);
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    left: 100px;
+    padding: 8px;
+
+}
+
+.BPinput {
+    margin-top: 3px;
+}
+
+.auto_carousel {
+    /* max-width: 80%; */
+    border-radius: 20px;
+}
+
+.carousel__img {
+    width: 1300px;
+    height: 550px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.carousel-item {
+    transition: transform 2s ease, opacity 0.2s ease-out !important;
+
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.value {
+    font-size: 30px;
+    margin: 0;
+}
+
+.upbtn {
+    border: 1px solid rgb(84, 132, 119);
+    background-color: wheat;
+    text-decoration: none;
+    color: rgb(84, 132, 119);
+    padding: 2px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.upbtn:hover {
+    border: 1px solid wheat;
+    background-color: rgb(84, 132, 119);
+    color: wheat;
+
+}
+
+.footer {
+    /* line-height: 50px; */
+    width: 100%;
+    background-color: rgb(63, 63, 82);
+    /* display: block; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    color: aliceblue;
+
+    position: absolute;
+    left: 0;
+    bottom: -10000;
+    /* bottom: 0; */
+    height: 80px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+}
+
+.footer_contacts {
+    font-weight: 400;
+    color: rgb(84, 132, 119);
+}
+
+.ru__300 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+}
+
+.ru__400 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+.ru__700 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+}
+.konteynir_contact {
+    display: flex;
+    
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact_h {
+    font-size: 54px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.contact_p {
+    font-size: 44px;
+}
+.contact_connect {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+.conectList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 99%;
+}  
+.contactBlock {
+    min-width: 20%;
+    display: flex;
+    min-height: 250px;
+    /* border: 1px solid rgb(84, 132, 119); */
+    align-items: end;
+    justify-content: center;
+
+} 
+.lil_line {
+    width: 45px;
+    background-color: black;
+    height: 4px;
+    margin: 20px;
+}
+.Block {
+    width: 100%;
+    height: 75%;
+    background-color:rgb(84, 132, 119);
+}
+
+.independent_item {
+    position: absolute;
+    font-size: 60px;
+    margin-bottom: 145px;
+}
+.independent_text {
+    position: absolute;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+.independent_info {
+    position: absolute;
+    font-size: 23px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 230px ;
+    text-align: center;
+padding: 5px    ;
+background: white;
+color:rgb(73, 72, 90) !important;
+}
+.body {
+    margin-bottom: 25px;
+}
+.vkcom {
+    text-decoration: none;
+}
+
+@media (max-width:1120px) {
+    .nav {
+        width: 50%;
+    }
+
+    .text {
+        padding: 5px;
+    }
+}
+
+@media (max-width:425px) {
+    .nav {
+        width: 100%;
+    }
+
+    .buyzone {
+        max-width: 400px;
+        padding: 10px;
+    }
+
+    .img_buyzone {
+        margin: 0px;
+        margin-top: 5px;
+    }
+
+    .button {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:375px) {
+    .buyzone {
+        max-width: 350px;
+    }
+
+
+}
+
+@media (max-width:320px) {
+    .buyzone {
+        max-width: 300px;
+    }
+
+}
